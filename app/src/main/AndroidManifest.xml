@@ -13,21 +13,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestPush"
         tools:targetApi="31">
+
         <activity
-            android:name=".ImageRandomView"
-            android:exported="false" />
+            android:name=".CalcActivity"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
         <activity
-            android:name=".lineartest"
+            android:name=".MainActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".splashActivity"
+            android:exported="true"/>
+
+
         <activity
             android:name=".LoginInputActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
